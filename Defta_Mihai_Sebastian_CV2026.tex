@@ -1,0 +1,104 @@
+% Document class and font size
+\documentclass[a4paper,9pt]{extarticle}
+
+% Packages
+\usepackage[utf8]{inputenc} % For input encoding
+\usepackage{geometry} % For page margins
+\geometry{a4paper, margin=0.75in} % Set paper size and margins
+\usepackage{titlesec} % For section title formatting
+\usepackage{enumitem} % For itemized list formatting
+\usepackage{hyperref} % For hyperlinks
+\usepackage{multirow}
+
+% Formatting
+\setlist{noitemsep} % Removes item separation
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[\titlerule] % Section title format
+\titlespacing*{\section}{0pt}{\baselineskip}{\baselineskip} % Section title spacing
+
+% Begin document
+\begin{document}
+
+% Disable page numbers
+\pagestyle{empty}
+
+% Header
+\begin{center}
+\textbf{\huge Defta Mihai-Sebastian}\\[10pt] % Name 
+\href{deftasebastian16@gmail.com}{deftasebastian16@gmail.com} | +40 753 023 393 | \href{https://www.linkedin.com/in/defta-mihai-sebastian}{linkedin.com/in/defta-mihai-sebastian} % Contact info
+\end{center}
+
+% Education Section
+\section*{EDUCATION}
+\noindent
+University \textbf{POLITEHNICA} of Bucharest, Faculty of Automatic Control and Computer Science, 
+Bucharest, Romania.
+\begin{itemize}
+\item \textbf{Master's Degree in Graphics, Multimedia and Virtual Reality}, Expected graduation: July 2026
+\item \textbf{Bachelor of Computer Science and Engineering}, October 2019 - July 2023
+\item \textbf{Relevant coursework}: Operating Systems, Network Protocols, Computer Systems Architecture, Local Area Networks, Compilers, Parallel Architectures and Processing, Volumetric Data Visualization and Computer Animation.
+\end{itemize} 
+
+% Experience Section
+\section*{WORK EXPERIENCE}
+
+\noindent
+\textbf{Thales Romania} - \textbf{\href{https://www.thalesaleniaspace.com/en/news/orchide-enhancing-management-onboard-satellite-applications}{ORCHIDE}} \hfill Bucharest, Romania \\
+\textit{Software Developer} \hfill July 2024 - February 2026
+\begin{itemize}
+    \item  Contributed to the definition and implementation of a demostrator/Proof of Concept for the ORCHIDE project, a platform-agnostic orchestration solution for Earth Observation satellite workloads using application pipelines and unikernels
+    \item Identified and reported \textbf{2 major}  defects in \textbf{urunc}; provided troubleshooting support, improving stability
+    \item Automated VM provisioning with \textbf{Bash} scripts (install and configure \textbf{urunc, K3s, Argo Workflows}), reducing setup time and minimizing manual errors
+    \item Provisioned and configured a 5-node \textbf{Raspberry Pi K3s cluster} to validate and demonstrate the functionality of the prototype component.
+    \item Built and packaged \textbf{MirageOS} and \textbf{Unikraft unikernels}; deployed and validated them in a \textbf{K3s cluster}, integrating execution with \textbf{Argo Workflows}
+    \item Set up \textbf{Gitlab CI/CD pipelines} to ease the development, integration, deployment, and delivery of the project
+    \item Developed a \textbf{React-based visual YAML} generator for \textbf{Argo Workflows}, reducing development time and configuration errors
+\end{itemize}
+
+\noindent \textbf{Thales Romania} - \textbf{ESD} - EGNSS Service Demonstrator \hfill Bucharest, Romania \\ \textit{Software Developer} \hfill February 2026 - Present 
+\begin{itemize} 
+    \item Built a \textbf{Grafana dashboard} to visualize processed data through custom graphs.\item Prepared and transformed data used by \textbf{Python} scripts, stored it in \textbf{PostgreSQL}, and queried it for dashboard integration.
+    \item Developed native \textbf{SWO (Software Orchestrator) processors}, built their \textbf{Docker} images, packaged them with \textbf{Helm charts}, and deployed them to a \textbf{Kubernetes} cluster.
+    \item Defined \textbf{OpenAPI}-based interfaces to simplify frontend integration with the deployed service.
+\end{itemize}
+
+\noindent
+\textbf{Keysight} \hfill Bucharest, Romania\\ % Company name and location
+\textit{Software Engineer Intern} \hfill June 2022 - September 2022 % Position and duration
+\begin{itemize}
+    \item \textbf{Researched} various \textbf{fuzzing tools and techniques} with the scope of finding \textbf{vulnerabilites} and \textbf{bugs} % Job responsibilities and achievements
+    \item Pushed \textbf{upstream public contributions} to \href{https://github.com/microsoft/restler-fuzzer}{RESTler Fuzzer} by Microsoft to extend the feature set
+\end{itemize}
+
+
+
+% Projects Section
+\section*{PROJECTS}
+
+\noindent
+\textbf{Kprobe based tracer}, \hfill April 2023
+\begin{itemize}
+    \item Implemented a tracer as a \textbf{kernel module} that can be used to inspect \textbf{syscalls} like \textbf{kmalloc}, \textbf{kfree} and \textbf{schedule} % Project description and contributions
+    \item The collected statistics were displayed via the \textbf{proc file system}
+\end{itemize}
+
+% Extra activities
+\section*{EXTRACURRICULAR ACTIVITIES}
+\noindent
+\textbf{Voluntary work at \href{https://efden.org/}{EFdeN}}, \hfill December 2023 - February 2025
+\begin{itemize}
+    \item Collaborated with a team to convert a large touchscreen display into a secure \textbf{Android kiosk}, developing the \textbf{Kotlin} app that powers the interface
+    \item Designed and implemented both \textbf{backend} and \textbf{frontend} components of a bus monitoring application using \textbf{Kotlin}. 
+    \item Integrated multiple \textbf{APIs} to deliver live bus locations, event updates, and personalized routing advice to users.
+    \item Created the user interface in \textbf{Figma}, ensuring intuitive interaction and high visual standards. The final design was adopted for the station’s public display system
+\end{itemize}
+
+% Skills Section
+\section*{SKILLS}
+\begin{itemize}
+    \item Programming languages: \textbf{Go, Python, YAML, C\#, C, C++, Bash, Java, Kotlin}
+    \item Operating Systems: \textbf{Linux, Windows}
+    \item Technologies/tools: \textbf{OpenGL, Docker, Docker Compose, K3s, Argo Workflows, Unikernels (Unikraft, MirageOS), Urunc, OpenStack, Git, Gitlab pipelines, Jira, Grafana, PostgreSQL }.
+\end{itemize}
+
+% End document
+\end{document}
